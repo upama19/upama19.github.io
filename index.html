@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #ff6b6b;
+            --primary-color: #120461;
             --secondary-color: #4ecdc4;
             --text-color: #333;
             --bg-light: #f0f2f5;
@@ -18,7 +19,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: system-ui, Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, var(--bg-light), #e6e9f0);
@@ -48,7 +49,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
             opacity: 0.5;
         }
 
@@ -66,13 +67,20 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         nav {
             background: var(--card-bg-light);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -81,7 +89,7 @@
 
         body.dark-mode nav {
             background: var(--card-bg-dark);
-            box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
         }
 
         nav ul {
@@ -139,8 +147,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h2 {
@@ -156,22 +171,22 @@
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         body.dark-mode .card {
             background: var(--card-bg-dark);
-            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         body.dark-mode .card:hover {
-            box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
         }
 
         .card h3 {
@@ -205,13 +220,13 @@
             background: var(--card-bg-light);
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
         body.dark-mode .courseworks li {
             background: var(--card-bg-dark);
-            box-shadow: 0 3px 8px rgba(255,255,255,0.1);
+            box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
         }
 
         .courseworks li:hover {
@@ -271,6 +286,7 @@
         }
     </style>
 </head>
+
 <body>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <header>
@@ -434,4 +450,5 @@
         window.onload = loadContent;
     </script>
 </body>
+
 </html>
