@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --text-color: #333;
+            --bg-light: #f0f2f5;
+            --bg-dark: #1a1a1a;
+            --text-dark: #e0e0e0;
+            --card-bg-light: #fff;
+            --card-bg-dark: #2c2c2c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--bg-light), #e6e9f0);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+            scroll-behavior: smooth;
+        }
+
+        body.dark-mode {
+            background: linear-gradient(135deg, var(--bg-dark), #333);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+            opacity: 0.5;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            position: relative;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav {
+            background: var(--card-bg-light);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem;
+        }
+
+        body.dark-mode nav {
+            background: var(--card-bg-dark);
+            box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        body.dark-mode nav a {
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        body.dark-mode .dark-mode-toggle {
+            background: var(--secondary-color);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg-light);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        body.dark-mode .card {
+            background: var(--card-bg-dark);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        body.dark-mode .card:hover {
+            box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin: 0 0 0.5rem;
+            color: var(--text-color);
+        }
+
+        body.dark-mode .card h3 {
+            color: var(--text-dark);
+        }
+
+        .card p {
+            margin: 0.3rem 0;
+            color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .courseworks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .courseworks li {
+            background: var(--card-bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        body.dark-mode .courseworks li {
+            background: var(--card-bg-dark);
+            box-shadow: 0 3px 8px rgba(255,255,255,0.1);
+        }
+
+        .courseworks li:hover {
+            transform: scale(1.05);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .skills-category {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .skills-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <header>
+        <h1 id="name"></h1>
+        <p id="tagline"></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#courseworks">Courseworks</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div id="education-content"></div>
+    </section>
+
+    <section id="courseworks">
+        <h2>Relevant Courseworks</h2>
+        <ul id="courseworks-content" class="courseworks"></ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experiences</h2>
+        <div id="experience-content"></div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-content"></div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div id="skills-content" class="skills"></div>
+    </section>
+
+    <section id="leadership">
+        <h2>Leadership & Extracurricular</h2>
+        <div id="leadership-content"></div>
+    </section>
+
+    <footer>
+        <p id="contact"></p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        async function loadContent() {
+            try {
+                const response = await fetch('../content.json');
+                if (!response.ok) throw new Error('Failed to load content.json');
+                const data = await response.json();
+
+                // Header
+                document.getElementById('name').textContent = data.name;
+                document.getElementById('tagline').textContent = data.tagline;
+
+                // Contact
+                document.getElementById('contact').innerHTML = `
+                    Contact: <a href="mailto:${data.contact.email}">${data.contact.email}</a> | 
+                    LinkedIn: <a href="${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a> | 
+                    GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a>
+                `;
+
+                // Education
+                const educationContent = document.getElementById('education-content');
+                data.education.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'card';
+                    div.innerHTML = `
+                        <h3>${item.institution}</h3>
+                        <p>${item.duration}</p>
+                        <p>${item.degree} - ${item.location}${item.details ? ' - ' + item.details : ''}</p>
+                    `;
+                    educationContent.appendChild(div);
+                });
+
+                // Courseworks
+                const courseworksContent = document.getElementById('courseworks-content');
+                data.courseworks.forEach(course => {
+                    const li = document.createElement('li');
+                    li.textContent = course;
+                    courseworksContent.appendChild(li);
+                });
+
+                // Experience
+                const experienceContent = document.getElementById('experience-content');
+                data.experience.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'card';
+                    div.innerHTML = `
+                        <h3>${item.organization}</h3>
+                        <p>${item.duration}</p>
+                        <p>${item.role} - ${item.location}</p>
+                        <ul>
+                            ${item.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                        </ul>
+                    `;
+                    experienceContent.appendChild(div);
+                });
+
+                // Projects
+                const projectsContent = document.getElementById('projects-content');
+                data.projects.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'card';
+                    div.innerHTML = `
+                        <h3>${item.title} | ${item.technologies}</h3>
+                        <p>${item.date}</p>
+                        <ul>
+                            ${item.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                    `;
+                    projectsContent.appendChild(div);
+                });
+
+                // Skills
+                const skillsContent = document.getElementById('skills-content');
+                Object.keys(data.skills).forEach(category => {
+                    const div = document.createElement('div');
+                    div.className = 'skills-category';
+                    div.innerHTML = `
+                        <h3>${category.replace('_', ' ').replace(/^\w/, c => c.toUpperCase())}</h3>
+                        <p>${data.skills[category].join(', ')}</p>
+                    `;
+                    skillsContent.appendChild(div);
+                });
+
+                // Leadership & Extracurricular
+                const leadershipContent = document.getElementById('leadership-content');
+                data.leadership_extracurricular.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'card';
+                    div.innerHTML = `
+                        <h3>${item.organization}</h3>
+                        <p>${item.duration}</p>
+                        <p>${item.role} - ${item.location}</p>
+                        <ul>
+                            ${item.activities.map(activity => `<li>${activity}</li>`).join('')}
+                        </ul>
+                    `;
+                    leadershipContent.appendChild(div);
+                });
+            } catch (error) {
+                console.error('Error loading content:', error);
+                document.body.innerHTML += '<p style="text-align: center; color: red;">Error loading content. Please ensure content.json is available.</p>';
+            }
+        }
+
+        // Load content when the page loads
+        window.onload = loadContent;
+    </script>
+</body>
+</html>

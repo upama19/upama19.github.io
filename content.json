@@ -1,0 +1,173 @@
+{
+  "name": "Upama Mahato",
+  "tagline": "Machine Learning Enthusiast | Graduate Student in Electrical & Computer Engineering",
+  "contact": {
+    "email": "upamashree2000@gmail.com",
+    "linkedin": "[linkedin-profile]",
+    "github": "[github-profile]"
+  },
+  "education": [
+    {
+      "institution": "North Dakota State University",
+      "degree": "Master’s in Electrical and Computer Engineering",
+      "location": "North Dakota, United States",
+      "duration": "2025 – Present"
+    },
+    {
+      "institution": "Kathmandu Engineering College, Tribhuvan University",
+      "degree": "Bachelor in Computer Engineering",
+      "location": "Kathmandu, Nepal",
+      "duration": "2018 – 2023",
+      "details": "Cumulative Percentage: 80.11%"
+    }
+  ],
+  "courseworks": [
+    "Probability and Statistics",
+    "Data Mining and Warehousing",
+    "Data Structure and Algorithm",
+    "Advanced Calculus",
+    "Artificial Intelligence",
+    "Applied Mathematics",
+    "Software Engineering",
+    "Remote Sensing",
+    "Communication English"
+  ],
+  "experience": [
+    {
+      "organization": "North Dakota State University",
+      "role": "Graduate Research Assistant",
+      "location": "Fargo, North Dakota, United States",
+      "duration": "January 2025 – Present",
+      "responsibilities": [
+        "Designed and implemented deep learning pipelines for semantic segmentation on 1024×1024 aerial imagery of sugar beet fields using U-Net, UNet++, VGG16-U-Net, Attention U-Net, and Deep VGG16-U-Net architectures.",
+        "Trained models using PyTorch with Fully Sharded Data Parallel (FSDP) across multi-GPU setups for efficient large-scale data processing.",
+        "Evaluated model performance using four loss functions (Dice Loss, CrossEntropy, Combo Loss, Weighted Loss) and metrics (Dice Score, IoU, confusion matrix).",
+        "Integrated gradient accumulation to enhance training stability and convergence.",
+        "Authored a research paper titled 'Accurate Pixel-Wise Object Detection Framework for Aerial Imagery,' focusing on comparative analysis of segmentation models for weed detection (under review)."
+      ]
+    },
+    {
+      "organization": "Fusemachines",
+      "role": "Associate ML Engineer",
+      "location": "Kathmandu, Nepal",
+      "duration": "August 2023 – July 2024",
+      "responsibilities": [
+        "Developed fraud detection models using DevNet, AutoEncoder, XGBoost, EBM, and Neural Networks.",
+        "Demonstrated expertise in data preprocessing, analysis, and visualization using tools like Projector.",
+        "Utilized AWS services, including EC2 instance deployment and S3 bucket management.",
+        "Completed a month-long training in intermediate Python.",
+        "Mastered SQL through a two-week intensive program.",
+        "Proficient in technical tools such as PostgreSQL and MS Excel."
+      ]
+    },
+    {
+      "organization": "Fusemachines",
+      "role": "AI Intern",
+      "location": "Kathmandu, Nepal",
+      "duration": "April 2023 – July 2023",
+      "responsibilities": [
+        "Conducted exploratory data analysis (EDA) on the IEEE-CIS dataset for fraud detection, building models with SVM, XGBoost, and AutoEncoder.",
+        "Authored academic content on Graph Neural Networks.",
+        "Collaborated with teams using Git for version control.",
+        "Led a Natural Language Processing (NLP) project for fake news detection."
+      ]
+    },
+    {
+      "organization": "Featherwebs",
+      "role": "Backend Developer Intern",
+      "location": "Lalitpur, Nepal",
+      "duration": "July 2022 – October 2022",
+      "responsibilities": [
+        "Gained hands-on experience in backend development and tool utilization.",
+        "Developed the backend for a blog site using PostgreSQL as the core database.",
+        "Provided dedicated support in a fast-paced work environment."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Credit Card Fraud Detection",
+      "technologies": "Python",
+      "date": "June 2023",
+      "details": [
+        "Performed in-depth analysis on the IEEE-CIS dataset, focusing on data preprocessing, feature engineering, and machine learning.",
+        "Applied XGBoost for ensemble modeling and AutoEncoder for anomaly detection, showcasing versatility in model selection."
+      ]
+    },
+    {
+      "title": "Name Entity Recognition",
+      "technologies": "Python",
+      "date": "October 2023",
+      "details": [
+        "Fine-tuned state-of-the-art models for document information extraction.",
+        "Implemented ChatGPT models with prompt engineering for automated field and entity extraction."
+      ]
+    },
+    {
+      "title": "Image Captioning System Using Deep Learning",
+      "technologies": "Python, Streamlit",
+      "date": "March 2023",
+      "details": [
+        "Utilized Inception V3 to process text and images on the MSCOCO 2017 dataset.",
+        "Developed a system combining computer vision and NLP to generate natural language image descriptions with 50% accuracy."
+      ]
+    },
+    {
+      "title": "Freelancing Marketplace Website in Nepal",
+      "technologies": "MERN Stack",
+      "date": "March 2021",
+      "details": [
+        "Designed and developed backend APIs and database integration.",
+        "Connected the database to the server and integrated backend with frontend."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "SQL", "C", "JavaScript"],
+    "tools": ["Git", "GitHub", "MLflow", "Google Cloud Platform", "LaTeX"],
+    "technologies_frameworks": ["Scikit-learn", "TensorFlow", "PyTorch", "Keras", "Pandas", "Node.js"]
+  },
+  "leadership_extracurricular": [
+    {
+      "organization": "KEC IT CLUB",
+      "role": "President",
+      "location": "Kathmandu Engineering College",
+      "duration": "2022 – 2023",
+      "activities": [
+        "Organized 'Kshitiz,' an event featuring IT alumni sharing professional experiences.",
+        "Collaborated with the Open Tech Community to host a hackfest event.",
+        "Mentored 15+ club members through regular meetings and feedback.",
+        "Led recruitment by interviewing and onboarding new members."
+      ]
+    },
+    {
+      "organization": "KEC IT CLUB",
+      "role": "Vice President",
+      "location": "Kathmandu Engineering College",
+      "duration": "2021 – 2022",
+      "activities": [
+        "Conducted a GitHub workshop with 80% active participation.",
+        "Led recruitment, onboarding 10+ new club members."
+      ]
+    },
+    {
+      "organization": "Art of Living",
+      "role": "Executive Member",
+      "location": "Kathmandu Engineering College",
+      "duration": "2018 – 2020",
+      "activities": [
+        "Volunteered for the 'Art of Living' course, engaging in team-building activities."
+      ]
+    },
+    {
+      "organization": "Red Cross",
+      "role": "Member",
+      "location": "Nepal Red Cross Society",
+      "duration": "2021 – 2022",
+      "activities": [
+        "Volunteered for the 'Warm Winter' campaign, collecting clothes for remote areas.",
+        "Participated in blood donation campaigns."
+      ]
+    }
+  ]
+}
