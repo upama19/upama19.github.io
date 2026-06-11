@@ -1,63 +1,64 @@
 {
-  "name": "Upama Mahato",
-  "tagline": "Machine Learning Enthusiast | Graduate Student in Electrical & Computer Engineering",
+  "name": "Upama Shree Mahato",
+  "tagline": "Machine Learning Engineer | M.S. in Electrical & Computer Engineering, NDSU",
+  "summary": "ML Engineer with 3+ years of experience building production-grade ML systems end-to-end. Combines hands-on industry experience at Fusemachines across fraud detection, scalable ETL pipelines, and AWS deployment with graduate research at NDSU in computer vision, distributed deep learning, and model optimization. Experienced across the full ML lifecycle: data curation, model training, evaluation, and deployment.",
   "contact": {
     "email": "upamashree2000@gmail.com",
-    "linkedin": "[linkedin-profile]",
-    "github": "[github-profile]"
+    "linkedin": "https://linkedin.com/in/upama-mahato",
+    "github": "https://github.com/upama19"
   },
   "education": [
     {
       "institution": "North Dakota State University",
-      "degree": "Master’s in Electrical and Computer Engineering",
-      "location": "North Dakota, United States",
-      "duration": "2025 – Present"
+      "degree": "Master's in Electrical and Computer Engineering — GPA 3.78",
+      "location": "Fargo, North Dakota, United States",
+      "duration": "Jan 2025 – May 2026"
     },
     {
       "institution": "Kathmandu Engineering College, Tribhuvan University",
       "degree": "Bachelor in Computer Engineering",
       "location": "Kathmandu, Nepal",
       "duration": "2018 – 2023",
-      "details": "Cumulative Percentage: 80.11%"
+      "details": "Cumulative Percentage: 80.11 / 100"
     }
   ],
   "courseworks": [
+    "Deep Learning",
+    "Artificial Intelligence",
     "Probability and Statistics",
     "Data Mining and Warehousing",
-    "Data Structure and Algorithm",
-    "Advanced Calculus",
-    "Artificial Intelligence",
-    "Applied Mathematics",
-    "Software Engineering",
+    "Data Structures and Algorithms",
     "Remote Sensing",
-    "Communication English"
+    "Software Engineering",
+    "Applied Mathematics",
+    "Advanced Calculus"
   ],
   "experience": [
     {
       "organization": "North Dakota State University",
-      "role": "Graduate Research Assistant",
+      "role": "Graduate Research and Teaching Assistant",
       "location": "Fargo, North Dakota, United States",
-      "duration": "January 2025 – Present",
+      "duration": "January 2025 – May 2026",
       "responsibilities": [
-        "Designed and implemented deep learning pipelines for semantic segmentation on 1024×1024 aerial imagery of sugar beet fields using U-Net, UNet++, VGG16-U-Net, Attention U-Net, and Deep VGG16-U-Net architectures.",
-        "Trained models using PyTorch with Fully Sharded Data Parallel (FSDP) across multi-GPU setups for efficient large-scale data processing.",
-        "Evaluated model performance using four loss functions (Dice Loss, CrossEntropy, Combo Loss, Weighted Loss) and metrics (Dice Score, IoU, confusion matrix).",
-        "Integrated gradient accumulation to enhance training stability and convergence.",
-        "Authored a research paper titled 'Accurate Pixel-Wise Object Detection Framework for Aerial Imagery,' focusing on comparative analysis of segmentation models for weed detection (under review)."
+        "Designed and benchmarked U-Net and its variants (UNet-VGG16, Deep VGG16+UNet, Attention U-Net with VGG16-BN) for pixel-wise semantic segmentation on 550 high-resolution UAV images (5472×3648 px) of sugar beet fields; best model achieved Dice 0.71 / IoU 0.59 at 1024×1024 patch resolution across 4 loss functions with systematic hyperparameter evaluation.",
+        "Implemented PyTorch FSDP distributed training across 2 GPUs with gradient accumulation (effective batch size 16), reducing per-epoch training time by 39%; deployed on NDSU CCAST HPC cluster using Singularity containers.",
+        "Engineered a hybrid memory optimization strategy (activation checkpointing + selective CPU offloading) to overcome a 150–170 GB activation memory bottleneck, enabling full-resolution training on a single NVIDIA H100 GPU.",
+        "Built a semi-automated annotation pipeline using Meta's Segment Anything Model (SAM) to generate pixel-level ground truth masks for 5 weed classes across the full dataset.",
+        "Designed a knowledge distillation framework (SqueezeNet → TinyCNN, 97k params / 0.37 MB) achieving 100% validation accuracy at 7× model compression for edge deployment.",
+        "Published and presented at the ASABE 2025 Annual International Meeting; delivered knowledge-transfer sessions to research team members."
       ]
     },
     {
       "organization": "Fusemachines",
-      "role": "Associate ML Engineer",
+      "role": "ML Engineer",
       "location": "Kathmandu, Nepal",
       "duration": "August 2023 – July 2024",
       "responsibilities": [
-        "Developed fraud detection models using DevNet, AutoEncoder, XGBoost, EBM, and Neural Networks.",
-        "Demonstrated expertise in data preprocessing, analysis, and visualization using tools like Projector.",
-        "Utilized AWS services, including EC2 instance deployment and S3 bucket management.",
-        "Completed a month-long training in intermediate Python.",
-        "Mastered SQL through a two-week intensive program.",
-        "Proficient in technical tools such as PostgreSQL and MS Excel."
+        "Developed and evaluated fraud detection models (XGBoost, autoencoders, neural networks) on large-scale transactional data using PyTorch and Scikit-learn, achieving up to 80% detection performance with reduced false positives.",
+        "Built scalable Python and PySpark ETL pipelines for high-volume data ingestion, transformation, and feature engineering, cutting preprocessing time by 40% through automation.",
+        "Deployed and monitored ML workflows on AWS (EC2, S3); maintained production reliability through systematic debugging, pipeline optimization, and model monitoring.",
+        "Designed SQL reporting pipelines for large-scale data extraction and metric tracking; resolved data quality issues (missing values, class imbalance, outliers) through systematic preprocessing.",
+        "Collaborated with cross-functional engineering and business teams to translate requirements into data-driven solutions; documented all workflows for team-wide reproducibility."
       ]
     },
     {
@@ -66,10 +67,8 @@
       "location": "Kathmandu, Nepal",
       "duration": "April 2023 – July 2023",
       "responsibilities": [
-        "Conducted exploratory data analysis (EDA) on the IEEE-CIS dataset for fraud detection, building models with SVM, XGBoost, and AutoEncoder.",
-        "Authored academic content on Graph Neural Networks.",
-        "Collaborated with teams using Git for version control.",
-        "Led a Natural Language Processing (NLP) project for fake news detection."
+        "Automated preprocessing and feature engineering on the IEEE-CIS fraud dataset; benchmarked ensemble models (SVM, XGBoost, autoencoders) and established reusable, documented experiment pipelines.",
+        "Led an NLP-based misinformation detection project using transformer-based classification (Hugging Face), delivering measurable accuracy improvements over baselines."
       ]
     },
     {
@@ -78,54 +77,82 @@
       "location": "Lalitpur, Nepal",
       "duration": "July 2022 – October 2022",
       "responsibilities": [
-        "Gained hands-on experience in backend development and tool utilization.",
-        "Developed the backend for a blog site using PostgreSQL as the core database.",
-        "Provided dedicated support in a fast-paced work environment."
+        "Built and deployed RESTful APIs using FastAPI and PostgreSQL with clean OOP design; implemented full CRUD operations, backend-to-frontend integration, and documented all schemas for team use."
       ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Accurate Pixel-Wise Object Detection Framework for Aerial Imagery",
+      "authors": "Mahato, U., Goli, N., Tida, U.R., Kim, J.Y.",
+      "venue": "2025 ASABE Annual International Meeting (conference publication)",
+      "year": "2025",
+      "doi": "10.13031/aim.202500827",
+      "link": "https://doi.org/10.13031/aim.202500827",
+      "details": "Developed a pixel-wise segmentation framework for high-resolution UAV imagery using U-Net and its variants with distributed training and memory optimization techniques."
+    },
+    {
+      "title": "Memory-Efficient Native-Resolution Training of U-Net for UAV-Based Weed Segmentation in Sugar Beet Fields",
+      "authors": "Mahato, U., et al.",
+      "venue": "Smart Agricultural Technology (Elsevier) — manuscript in submission",
+      "year": "2026",
+      "details": "Proposes a hybrid memory-optimization framework combining selective activation checkpointing with CPU offloading, enabling full-resolution UAV image training on a single H100 GPU."
     }
   ],
   "projects": [
     {
+      "title": "PDF-Grounded RAG Chat Application",
+      "technologies": "Python, FastMCP, FAISS, LLM APIs, Claude Code",
+      "date": "February 2026",
+      "details": [
+        "Built an end-to-end RAG pipeline from scratch — PDF parsing, FAISS vector indexing, transformer embeddings, and LLM API integration (Claude, GPT); applied prompt engineering to minimize hallucination and evaluated output quality against factual grounding metrics.",
+        "Exposed the pipeline as a Model Context Protocol (MCP) server using Anthropic's FastMCP SDK, with index_pdf and ask_document as callable tools; integrated with Claude Code for natural-language querying of local PDFs, reducing manual document review time by 60%."
+      ]
+    },
+    {
+      "title": "Edge-Deployable Speckle Sensing via Knowledge Distillation",
+      "technologies": "PyTorch, CNNs, Edge AI",
+      "date": "2025",
+      "details": [
+        "Designed a teacher–student knowledge distillation framework (KL divergence + cross-entropy) compressing SqueezeNet (724k params) into TinyCNN (97k params, 0.37 MB); distilled student achieved 100% validation accuracy at 7× compression with zero additional inference cost."
+      ]
+    },
+    {
+      "title": "BuilderSoft.ca Full-Stack Workflow Automation",
+      "technologies": "Python, FastAPI, GraphQL, MySQL",
+      "date": "July 2025",
+      "details": [
+        "Owned end-to-end delivery: designed MySQL schemas, built FastAPI and GraphQL APIs with role-based access control, and automated work-log tracking, task management, and invoicing workflows deployed and documented for team handoff."
+      ]
+    },
+    {
       "title": "Credit Card Fraud Detection",
-      "technologies": "Python",
+      "technologies": "Python, PyTorch, XGBoost, Scikit-learn, SQL",
       "date": "June 2023",
       "details": [
-        "Performed in-depth analysis on the IEEE-CIS dataset, focusing on data preprocessing, feature engineering, and machine learning.",
-        "Applied XGBoost for ensemble modeling and AutoEncoder for anomaly detection, showcasing versatility in model selection."
+        "Built an end-to-end ML pipeline on the IEEE-CIS dataset: automated data ingestion, feature engineering, and preprocessing; trained XGBoost and autoencoder models to detect fraudulent transactions at scale using anomaly detection.",
+        "Evaluated models using ROC-AUC and feature importance analysis; benchmarked multiple approaches to identify the best performing configuration, establishing a reusable, documented experiment framework."
       ]
     },
     {
-      "title": "Name Entity Recognition",
-      "technologies": "Python",
-      "date": "October 2023",
-      "details": [
-        "Fine-tuned state-of-the-art models for document information extraction.",
-        "Implemented ChatGPT models with prompt engineering for automated field and entity extraction."
-      ]
-    },
-    {
-      "title": "Image Captioning System Using Deep Learning",
-      "technologies": "Python, Streamlit",
+      "title": "Image Captioning System",
+      "technologies": "Python, TensorFlow, Inception V3, Transformers",
       "date": "March 2023",
       "details": [
-        "Utilized Inception V3 to process text and images on the MSCOCO 2017 dataset.",
-        "Developed a system combining computer vision and NLP to generate natural language image descriptions with 50% accuracy."
-      ]
-    },
-    {
-      "title": "Freelancing Marketplace Website in Nepal",
-      "technologies": "MERN Stack",
-      "date": "March 2021",
-      "details": [
-        "Designed and developed backend APIs and database integration.",
-        "Connected the database to the server and integrated backend with frontend."
+        "Built an image captioning system using Inception V3 for visual feature extraction and a transformer-based decoder for caption generation; trained and evaluated on the MSCOCO 2017 dataset."
       ]
     }
   ],
   "skills": {
-    "languages": ["Python", "SQL", "C", "JavaScript"],
-    "tools": ["Git", "GitHub", "MLflow", "Google Cloud Platform", "LaTeX"],
-    "technologies_frameworks": ["Scikit-learn", "TensorFlow", "PyTorch", "Keras", "Pandas", "Node.js"]
+    "languages": ["Python (expert)", "SQL", "R", "JavaScript", "C/C++ (familiar)"],
+    "ml_deep_learning": ["PyTorch", "TensorFlow", "Scikit-learn", "XGBoost", "Hugging Face Transformers"],
+    "computer_vision": ["CNNs", "Vision Transformers", "U-Net variants", "Semantic Segmentation", "Object Detection", "SAM"],
+    "llm_genai": ["RAG pipelines", "LLM APIs (Claude, GPT)", "Prompt engineering", "FAISS vector search", "Fine-tuning (LoRA/QLoRA)", "MCP server development (FastMCP)"],
+    "model_optimization": ["Knowledge distillation", "Quantization", "Pruning", "ONNX export", "On-device inference"],
+    "training_infrastructure": ["FSDP", "DeepSpeed", "Activation checkpointing", "HPC/SLURM", "Docker"],
+    "data_engineering": ["PySpark", "Pandas", "NumPy", "ETL pipelines", "Large-scale data curation"],
+    "cloud_mlops": ["AWS (EC2, S3, SageMaker)", "GitHub Actions", "Git"],
+    "databases_apis": ["PostgreSQL", "MySQL", "FastAPI", "REST/GraphQL APIs"]
   },
   "leadership_extracurricular": [
     {
